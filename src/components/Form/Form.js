@@ -8,15 +8,20 @@ import img5 from "./assets/img5.png";
 import img6 from "./assets/img6.png";
 
 const Form = () => {
+  document.addEventListener("dragstart", function (event) {
+    document.getElementById("dragInput").focus();
+    event.dataTransfer.setData("Text", `${event.target.innerHTML} `);
+  });
+
   return (
     <div>
       {/* top navbar */}
-      <nav class="navbar fixed-top navbar-expand-lg">
-        <div class="container-fluid">
-          <p class="navbar-brand">Navbar</p>
+      <nav className="navbar fixed-top navbar-expand-lg">
+        <div className="container-fluid">
+          <p className="navbar-brand">Navbar</p>
           {/* only show in small screens */}
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNavAltMarkup"
@@ -24,16 +29,16 @@ const Form = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <p class="nav-link active" aria-current="page">
+          <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div className="navbar-nav">
+              <p className="nav-link active" aria-current="page">
                 Home
               </p>
-              <p class="nav-link">Questions</p>
-              <p class="nav-link">Quiz</p>
-              <p class="nav-link">About</p>
+              <p className="nav-link">Questions</p>
+              <p className="nav-link">Quiz</p>
+              <p className="nav-link">About</p>
             </div>
           </div>
         </div>
@@ -53,14 +58,14 @@ const Form = () => {
             <form className="p-4">
               {/* short answer */}
               <div className="mb-3">
-                <label for="exampleInputPassword1" className="form-label">
+                <label htmlFor="exampleInputPassword1" className="form-label">
                   1. Provide short answer here.
                   <span
                     data-toggle="tooltip"
                     data-placement="left"
                     title="Short Answers"
                   >
-                    <i class="fa-solid fa-circle-info"></i>
+                    <i className="fa-solid fa-circle-info"></i>
                   </span>
                 </label>
                 <input
@@ -81,7 +86,7 @@ const Form = () => {
                         data-placement="left"
                         title="Multiple Choice"
                       >
-                        <i class="fa-solid fa-circle-info"></i>
+                        <i className="fa-solid fa-circle-info"></i>
                       </span>
                     </p>
                   </div>
@@ -117,31 +122,46 @@ const Form = () => {
                   className="form-check-input"
                   id="exampleCheck1"
                 ></input>
-                <label className="form-check-label" for="exampleCheck1">
+                <label className="form-check-label" htmlFor="exampleCheck1">
                   3. Check this
                   <span
                     data-toggle="tooltip"
                     data-placement="left"
                     title="Check Please"
                   >
-                    <i class="fa-solid fa-circle-info"></i>
+                    <i className="fa-solid fa-circle-info"></i>
                   </span>
                 </label>
               </div>
             </form>
+            {/* Drag and Drop */}
+            <div>
+              <div id="buttons">
+                <p draggable="true" id="1">
+                  Drag
+                </p>
+                <p draggable="true" id="2">
+                  And
+                </p>
+                <p draggable="true" id="3">
+                  Drop
+                </p>
+              </div>
+              <input id="dragInput" name="dragInput" type="text" />
+            </div>
           </div>
         </section>
         {/* another section */}
         <section className="section form-body custom-flex rounded-3">
           <form className="p-4">
             <div className="mb-3">
-              <label for="exampleInputEmail1" className="form-label">
+              <label htmlFor="exampleInputEmail2" className="form-label">
                 Email address
               </label>
               <input
                 type="email"
                 className="form-control"
-                id="exampleInputEmail1"
+                id="exampleInputEmail2"
                 aria-describedby="emailHelp"
               ></input>
               <div id="emailHelp" className="form-text">
@@ -149,22 +169,22 @@ const Form = () => {
               </div>
             </div>
             <div className="mb-3">
-              <label for="exampleInputPassword1" className="form-label">
+              <label htmlFor="exampleInputPassword1" className="form-label">
                 Password
               </label>
               <input
                 type="password"
                 className="form-control"
-                id="exampleInputPassword1"
+                id="exampleInputPassword2"
               ></input>
             </div>
             <div className="mb-3 form-check">
               <input
                 type="checkbox"
                 className="form-check-input"
-                id="exampleCheck1"
+                id="exampleCheck2"
               ></input>
-              <label className="form-check-label" for="exampleCheck1">
+              <label className="form-check-label" htmlFor="exampleCheck1">
                 Check me out
               </label>
             </div>
