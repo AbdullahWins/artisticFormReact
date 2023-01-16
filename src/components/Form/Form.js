@@ -133,22 +133,22 @@ const Form = () => {
                   </span>
                 </label>
               </div>
-            </form>
-            {/* Drag and Drop */}
-            <div>
-              <div id="buttons">
-                <p draggable="true" id="1">
-                  Drag
-                </p>
-                <p draggable="true" id="2">
-                  And
-                </p>
-                <p draggable="true" id="3">
-                  Drop
-                </p>
+              {/* Drag and Drop */}
+              <div>
+                <div id="buttons">
+                  <p draggable="true" id="1">
+                    Drag
+                  </p>
+                  <p draggable="true" id="2">
+                    And
+                  </p>
+                  <p draggable="true" id="3">
+                    Drop
+                  </p>
+                </div>
+                <input id="dragInput" name="dragInput" type="text" />
               </div>
-              <input id="dragInput" name="dragInput" type="text" />
-            </div>
+            </form>
           </div>
         </section>
         {/* another section */}
