@@ -1,6 +1,6 @@
 import React from "react";
 import "./Form.css";
-import csgo from "./assets/csgo.jpeg";
+import kuwait from "./assets/kuwait.jpeg";
 import img1 from "./assets/img1.png";
 import img2 from "./assets/img2.png";
 import img3 from "./assets/img3.png";
@@ -21,12 +21,13 @@ const Form = () => {
           <img id="img5" src={img5} alt="" />
           <img id="img6" src={img6} alt="" />
           <div class="card">
-            <img src={csgo} class="card-img-top" alt="csgo" />
+            <img src={kuwait} class="card-img-top" alt="csgo" />
             <div class="card-body">
-              <h5 class="card-title">Counter Strike Anime Offensive</h5>
+              <h5 class="card-title">Welcome to Kuwait</h5>
               <p class="card-text">
-                This is a Counter Strike Anime Offensive card, Anime version.
-                With Dragon Lore AWP, So be careful and don't peek mid.
+                This is a Visitor Pass for Kuwait, Visit us and enjoy the best
+                hospitality with natural beauty that are exclusive to Kuwait
+                only.
               </p>
               <a href="/" class="btn btn-primary">
                 PLAY
@@ -36,12 +37,13 @@ const Form = () => {
         </section>
         <section class="section form-body d-flex align-items-center justify-content-center rounded-3">
           <div class="card">
-            <img src={csgo} class="card-img-top" alt="anime" />
+            <img src={kuwait} class="card-img-top" alt="anime" />
             <div class="card-body">
-              <h5 class="card-title">Counter Strike Anime Offensive</h5>
+              <h5 class="card-title">Welcome to Kuwait</h5>
               <p class="card-text">
-                This is a Counter Strike Anime Offensive card, Anime version.
-                With Dragon Lore AWP, So be careful and don't peek mid.
+                This is a Visitor Pass for Kuwait, Visit us and enjoy the best
+                hospitality with natural beauty that are exclusive to Kuwait
+                only.
               </p>
               <a href="/" class="btn btn-primary">
                 PLAY
