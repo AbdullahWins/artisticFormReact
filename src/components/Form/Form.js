@@ -10,9 +10,11 @@ import img6 from "./assets/img6.png";
 const Form = () => {
   return (
     <div>
+      {/* top navbar */}
       <nav class="navbar fixed-top navbar-expand-lg">
         <div class="container-fluid">
           <p class="navbar-brand">Navbar</p>
+          {/* only show in small screens */}
           <button
             class="navbar-toggler"
             type="button"
@@ -37,8 +39,10 @@ const Form = () => {
         </div>
       </nav>
       <p id="under-nav"></p>
-      <div className="body d-flex flex-column align-items-center gap-5 justify-content-center py-4">
-        <section className="form-body position-relative d-flex align-items-center justify-content-center rounded-3">
+      <div className="body custom-flex flex-column gap-5 py-4">
+        {/* main section */}
+        <section className="form-body position-relative custom-flex rounded-3">
+          {/* floating icons */}
           <img id="img1" src={img1} alt="" />
           <img id="img2" src={img2} alt="" />
           <img id="img3" src={img3} alt="" />
@@ -50,7 +54,14 @@ const Form = () => {
               {/* short answer */}
               <div className="mb-3">
                 <label for="exampleInputPassword1" className="form-label">
-                  1. Provide short answer here!
+                  1. Provide short answer here.
+                  <span
+                    data-toggle="tooltip"
+                    data-placement="left"
+                    title="Short Answers"
+                  >
+                    <i class="fa-solid fa-circle-info"></i>
+                  </span>
                 </label>
                 <input
                   type="password"
@@ -63,12 +74,18 @@ const Form = () => {
               <div className="container my-1">
                 <div className="question pt-2">
                   <div>
-                    <p>2. Multiple choice question here!</p>
+                    <p>
+                      2. Multiple choice question here.
+                      <span
+                        data-toggle="tooltip"
+                        data-placement="left"
+                        title="Multiple Choice"
+                      >
+                        <i class="fa-solid fa-circle-info"></i>
+                      </span>
+                    </p>
                   </div>
-                  <div
-                    className="ml-md-3 ml-sm-3 pl-md-5 pt-sm-0 pt-3"
-                    id="options"
-                  >
+                  <div className="pt-3" id="options">
                     <label className="options">
                       Okay
                       <input type="radio" name="radio"></input>
@@ -102,12 +119,20 @@ const Form = () => {
                 ></input>
                 <label className="form-check-label" for="exampleCheck1">
                   3. Check this
+                  <span
+                    data-toggle="tooltip"
+                    data-placement="left"
+                    title="Check Please"
+                  >
+                    <i class="fa-solid fa-circle-info"></i>
+                  </span>
                 </label>
               </div>
             </form>
           </div>
         </section>
-        <section className="section form-body d-flex align-items-center justify-content-center rounded-3">
+        {/* another section */}
+        <section className="section form-body custom-flex rounded-3">
           <form className="p-4">
             <div className="mb-3">
               <label for="exampleInputEmail1" className="form-label">
