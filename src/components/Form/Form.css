@@ -88,15 +88,15 @@
 .form-body {
   background-color: white;
   color: black;
-  height: 800px;
-  width: 800px;
+  height: 700px;
+  width: 600px;
 }
 
 /* every icon with their animation */
 #img1 {
   position: absolute;
   top: 50px;
-  right: 25px;
+  right: 15px;
   z-index: 999;
   width: 150px;
   animation-name: img1;
@@ -118,9 +118,9 @@
 #img2 {
   position: absolute;
   top: 300px;
-  right: 75px;
+  right: 00px;
   z-index: 999;
-  width: 150px;
+  width: 100px;
   animation-name: img2;
   animation-duration: 4s;
   animation-iteration-count: infinite;
@@ -139,7 +139,7 @@
 }
 #img3 {
   position: absolute;
-  top: 600px;
+  top: 500px;
   right: 50px;
   z-index: 999;
   width: 150px;
@@ -150,19 +150,19 @@
 
 @keyframes img3 {
   0% {
-    top: 600px;
+    top: 500px;
   }
   50% {
-    top: 590px;
+    top: 490px;
   }
   100% {
-    top: 600px;
+    top: 500px;
   }
 }
 #img4 {
   position: absolute;
-  bottom: 500px;
-  left: 20px;
+  bottom: 300px;
+  left: 10px;
   z-index: 999;
   width: 150px;
   animation-name: img4;
@@ -183,8 +183,8 @@
 }
 #img5 {
   position: absolute;
-  bottom: 300px;
-  left: 60px;
+  bottom: 500px;
+  left: 10px;
   z-index: 999;
   width: 150px;
   animation-name: img5;
@@ -206,9 +206,9 @@
 #img6 {
   position: absolute;
   bottom: 100px;
-  left: 50px;
+  left: 0px;
   z-index: 999;
-  width: 150px;
+  width: 120px;
   animation-name: img6;
   animation-duration: 4s;
   animation-iteration-count: infinite;
@@ -306,15 +306,15 @@
 /* media query for mid size screen */
 @media (min-width: 601px) and (max-width: 1000px) {
   .form-body {
-    width: 600px;
+    width: 500px;
     height: 600px;
   }
   #img1 {
-    width: 70px;
+    width: 90px;
   }
   #img2 {
     top: 250px;
-    width: 70px;
+    width: 77px;
     right: 25px;
   }
 
@@ -331,7 +331,7 @@
   }
   #img3 {
     top: 10px;
-    width: 70px;
+    width: 90px;
   }
 
   @keyframes img3 {
@@ -346,10 +346,10 @@
     }
   }
   #img4 {
-    width: 70px;
+    width: 110px;
   }
   #img5 {
-    width: 70px;
+    width: 90px;
   }
   #img6 {
     bottom: 50px;
