@@ -70,7 +70,7 @@ const Form = () => {
                     </span>
                   </label>
                   <input
-                    type="password"
+                    type="name"
                     className="form-control"
                     id="exampleInputPassword1"
                   ></input>
