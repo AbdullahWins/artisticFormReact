@@ -1,11 +1,15 @@
 import React from "react";
 import "./Form.css";
-import img1 from "./assets/img1.png";
-import img2 from "./assets/img2.png";
-import img3 from "./assets/img3.png";
-import img4 from "./assets/img4.png";
-import img5 from "./assets/img5.png";
-import img6 from "./assets/img6.png";
+import img1 from "../../assets/img1.png";
+import img2 from "../../assets/img2.png";
+import img3 from "../../assets/img3.png";
+import img4 from "../../assets/img4.png";
+import img5 from "../../assets/img5.png";
+import img6 from "../../assets/img6.png";
+import CheckBox from "../check-box/CheckBox";
+import ShortAnswer from "../short-answer/ShortAnswer";
+import MultipleChoice from "../multiple-choice/MultipleChoice";
+import DragAndDrop from "../drag-n-drop/DragAndDrop";
 
 const Form = () => {
   //javascript for drag n drop
@@ -47,7 +51,7 @@ const Form = () => {
       <p id="under-nav"></p>
       <div className="body custom-flex flex-column">
         {/* main section */}
-        <div className="custom-flex inner-body position-relative">
+        <div className="custom-flex inner-body">
           {/* floating icons */}
           <img id="img1" src={img1} alt="" />
           <img id="img2" src={img2} alt="" />
@@ -59,105 +63,16 @@ const Form = () => {
             <div className="card">
               <form className="p-4">
                 {/* short answer */}
-                <div className="mb-3">
-                  <label htmlFor="exampleInputPassword1" className="form-label">
-                    1. Provide short answer here.
-                    <span
-                      data-toggle="tooltip"
-                      data-placement="left"
-                      title="Short Answers"
-                    >
-                      <i className="fa-solid fa-circle-info"></i>
-                    </span>
-                  </label>
-                  <input
-                    type="name"
-                    className="form-control"
-                    id="exampleInputPassword1"
-                  ></input>
-                </div>
+                <ShortAnswer></ShortAnswer>
                 <hr />
                 {/* multiple choice */}
-                <div className="container">
-                  <div className="question">
-                    <div>
-                      <p>
-                        2. Multiple choice question here.
-                        <span
-                          data-toggle="tooltip"
-                          data-placement="left"
-                          title="Multiple Choice"
-                        >
-                          <i className="fa-solid fa-circle-info"></i>
-                        </span>
-                      </p>
-                    </div>
-                    <div className="pt-3" id="options">
-                      <label className="options">
-                        Okay
-                        <input type="radio" name="radio"></input>
-                        <span className="checkmark"></span>
-                      </label>
-                      <label className="options">
-                        Yes
-                        <input type="radio" name="radio"></input>
-                        <span className="checkmark"></span>
-                      </label>
-                      <label className="options">
-                        Works!
-                        <input type="radio" name="radio"></input>
-                        <span className="checkmark"></span>
-                      </label>
-                      <label className="options">
-                        Not cool
-                        <input type="radio" name="radio"></input>
-                        <span className="checkmark"></span>
-                      </label>
-                    </div>
-                  </div>
-                </div>
+                <MultipleChoice></MultipleChoice>
                 <hr />
                 {/* check box */}
-                <div className="form-check">
-                  <input
-                    type="checkbox"
-                    className="form-check-input"
-                    id="exampleCheck1"
-                  ></input>
-                  <label className="form-check-label" htmlFor="exampleCheck1">
-                    3. Check this
-                    <span
-                      data-toggle="tooltip"
-                      data-placement="left"
-                      title="Check Please"
-                    >
-                      <i className="fa-solid fa-circle-info"></i>
-                    </span>
-                  </label>
-                </div>
+                <CheckBox></CheckBox>
                 <hr />
                 {/* Drag and Drop */}
-                <div>
-                  <div className="custom-flex" id="buttons">
-                    <p className="custom-bg" draggable="true" id="1">
-                      Drag
-                    </p>
-                    <p className="custom-bg" draggable="true" id="2">
-                      And
-                    </p>
-                    <p className="custom-bg" draggable="true" id="3">
-                      Drop
-                    </p>
-                  </div>
-                  <div className="custom-flex">
-                    <input
-                      id="dragInput"
-                      name="dragInput"
-                      type="text"
-                      placeholder="drop here"
-                    />
-                  </div>
-                </div>
+                <DragAndDrop></DragAndDrop>
               </form>
             </div>
           </section>
