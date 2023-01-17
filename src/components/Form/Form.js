@@ -137,13 +137,13 @@ const Form = () => {
                 {/* Drag and Drop */}
                 <div>
                   <div id="buttons">
-                    <p draggable="true" id="1">
+                    <p className="custom-bg" draggable="true" id="1">
                       Drag
                     </p>
-                    <p draggable="true" id="2">
+                    <p className="custom-bg" draggable="true" id="2">
                       And
                     </p>
-                    <p draggable="true" id="3">
+                    <p className="custom-bg" draggable="true" id="3">
                       Drop
                     </p>
                   </div>

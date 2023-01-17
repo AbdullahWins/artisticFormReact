@@ -14,6 +14,10 @@
   align-items: center;
   justify-content: center;
 }
+.custom-bg {
+  background-color: rgb(220, 220, 220);
+  margin: 3px;
+}
 #under-nav {
   padding-bottom: 35px;
 }
