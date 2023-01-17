@@ -2,6 +2,8 @@
   display: flex;
   background-image: url("./assets/background.jpeg");
   background-size: cover;
+  gap: 50px;
+  padding: 50px 0px;
 }
 .inner-body {
   display: flex;
@@ -95,10 +97,12 @@
   }
 }
 
+
 /* form here */
 .form-body {
   color: black;
   width: 500px;
+  border-radius: 7px;
 }
 
 /* every icon with their animation */

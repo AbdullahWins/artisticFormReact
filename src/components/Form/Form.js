@@ -8,6 +8,7 @@ import img5 from "./assets/img5.png";
 import img6 from "./assets/img6.png";
 
 const Form = () => {
+  //javascript for drag n drop
   document.addEventListener("dragstart", function (event) {
     document.getElementById("dragInput").focus();
     event.dataTransfer.setData("Text", `${event.target.innerHTML} `);
@@ -44,7 +45,7 @@ const Form = () => {
         </div>
       </nav>
       <p id="under-nav"></p>
-      <div className="body custom-flex flex-column gap-5 py-4">
+      <div className="body custom-flex flex-column">
         {/* main section */}
         <div className="custom-flex inner-body position-relative">
           {/* floating icons */}
@@ -54,7 +55,7 @@ const Form = () => {
           <img id="img4" src={img4} alt="" />
           <img id="img5" src={img5} alt="" />
           <img id="img6" src={img6} alt="" />
-          <section className="form-body custom-flex rounded-3">
+          <section className="form-body custom-flex">
             <div className="card">
               <form className="p-4">
                 {/* short answer */}
@@ -77,8 +78,8 @@ const Form = () => {
                 </div>
                 <hr />
                 {/* multiple choice */}
-                <div className="container my-1">
-                  <div className="question pt-2">
+                <div className="container">
+                  <div className="question">
                     <div>
                       <p>
                         2. Multiple choice question here.
@@ -117,7 +118,7 @@ const Form = () => {
                 </div>
                 <hr />
                 {/* check box */}
-                <div className="my-3 form-check">
+                <div className="form-check">
                   <input
                     type="checkbox"
                     className="form-check-input"
@@ -134,6 +135,7 @@ const Form = () => {
                     </span>
                   </label>
                 </div>
+                <hr />
                 {/* Drag and Drop */}
                 <div>
                   <div className="custom-flex" id="buttons">
@@ -147,7 +149,7 @@ const Form = () => {
                       Drop
                     </p>
                   </div>
-                  <div className="custom-flex pt-2">
+                  <div className="custom-flex">
                     <input
                       id="dragInput"
                       name="dragInput"
@@ -161,7 +163,7 @@ const Form = () => {
           </section>
         </div>
         {/* another section */}
-        <section className="section form-body custom-flex rounded-3">
+        <section className="form-body custom-flex">
           <form className="p-4">
             <div className="mb-3">
               <label htmlFor="exampleInputEmail2" className="form-label">
@@ -177,7 +179,7 @@ const Form = () => {
                 We'll never share your email with anyone else.
               </div>
             </div>
-            <div className="mb-3">
+            <div>
               <label htmlFor="exampleInputPassword1" className="form-label">
                 Password
               </label>
@@ -187,7 +189,7 @@ const Form = () => {
                 id="exampleInputPassword2"
               ></input>
             </div>
-            <div className="mb-3 form-check">
+            <div className="form-check">
               <input
                 type="checkbox"
                 className="form-check-input"
