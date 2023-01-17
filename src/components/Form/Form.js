@@ -136,7 +136,7 @@ const Form = () => {
                 </div>
                 {/* Drag and Drop */}
                 <div>
-                  <div id="buttons">
+                  <div className="custom-flex" id="buttons">
                     <p className="custom-bg" draggable="true" id="1">
                       Drag
                     </p>
@@ -147,7 +147,14 @@ const Form = () => {
                       Drop
                     </p>
                   </div>
-                  <input id="dragInput" name="dragInput" type="text" />
+                  <div className="custom-flex pt-2">
+                    <input
+                      id="dragInput"
+                      name="dragInput"
+                      type="text"
+                      placeholder="drop here"
+                    />
+                  </div>
                 </div>
               </form>
             </div>

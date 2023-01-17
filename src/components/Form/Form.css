@@ -17,6 +17,8 @@
 .custom-bg {
   background-color: rgb(220, 220, 220);
   margin: 3px;
+  border: 1px solid grey;
+  border-radius: 4px;
 }
 #under-nav {
   padding-bottom: 35px;
@@ -104,7 +106,7 @@
 #img1 {
   position: absolute;
   top: 50px;
-  right: 15px;
+  right: 5px;
   z-index: 999;
   width: 150px;
   animation-name: img1;
@@ -147,8 +149,8 @@
 }
 #img3 {
   position: absolute;
-  top: 500px;
-  right: 50px;
+  top: 600px;
+  right: 0px;
   z-index: 999;
   width: 150px;
   animation-name: img3;
@@ -158,13 +160,13 @@
 
 @keyframes img3 {
   0% {
-    top: 500px;
+    top: 600px;
   }
   50% {
-    top: 490px;
+    top: 590px;
   }
   100% {
-    top: 500px;
+    top: 600px;
   }
 }
 #img4 {
@@ -191,7 +193,7 @@
 }
 #img5 {
   position: absolute;
-  bottom: 500px;
+  bottom: 600px;
   left: 10px;
   z-index: 999;
   width: 150px;
@@ -202,13 +204,13 @@
 
 @keyframes img5 {
   0% {
-    bottom: 500px;
+    bottom: 600px;
   }
   50% {
-    bottom: 490px;
+    bottom: 590px;
   }
   100% {
-    bottom: 500px;
+    bottom: 600px;
   }
 }
 #img6 {
@@ -321,13 +323,13 @@
 /* media query for mid size screen */
 @media (min-width: 601px) and (max-width: 1000px) {
   .form-body {
-    width: 300px;
+    width: 350px;
     height: 600px;
   }
   .inner-body {
     display: flex;
-    width: 500px;
-    height: 700px;
+    width: 550px;
+    height: 600px;
   }
   .card {
     width: 75%;
@@ -338,7 +340,7 @@
   #img2 {
     top: 250px;
     width: 77px;
-    right: 25px;
+    right: 5px;
   }
 
   @keyframes img2 {
@@ -354,7 +356,7 @@
   }
   #img3 {
     top: 10px;
-    right: 5px;
+    right: 0px;
     width: 90px;
   }
 
@@ -371,9 +373,11 @@
   }
   #img4 {
     width: 110px;
+    left: 0px;
   }
   #img5 {
     width: 90px;
+    left: 10px;
   }
   #img6 {
     bottom: 50px;
