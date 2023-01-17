@@ -46,7 +46,7 @@ const Form = () => {
       <p id="under-nav"></p>
       <div className="body custom-flex flex-column gap-5 py-4">
         {/* main section */}
-        <section className="form-body position-relative custom-flex rounded-3">
+        <div className="custom-flex inner-body position-relative">
           {/* floating icons */}
           <img id="img1" src={img1} alt="" />
           <img id="img2" src={img2} alt="" />
@@ -54,103 +54,105 @@ const Form = () => {
           <img id="img4" src={img4} alt="" />
           <img id="img5" src={img5} alt="" />
           <img id="img6" src={img6} alt="" />
-          <div className="card">
-            <form className="p-4">
-              {/* short answer */}
-              <div className="mb-3">
-                <label htmlFor="exampleInputPassword1" className="form-label">
-                  1. Provide short answer here.
-                  <span
-                    data-toggle="tooltip"
-                    data-placement="left"
-                    title="Short Answers"
-                  >
-                    <i className="fa-solid fa-circle-info"></i>
-                  </span>
-                </label>
-                <input
-                  type="password"
-                  className="form-control"
-                  id="exampleInputPassword1"
-                ></input>
-              </div>
-              <hr />
-              {/* multiple choice */}
-              <div className="container my-1">
-                <div className="question pt-2">
-                  <div>
-                    <p>
-                      2. Multiple choice question here.
-                      <span
-                        data-toggle="tooltip"
-                        data-placement="left"
-                        title="Multiple Choice"
-                      >
-                        <i className="fa-solid fa-circle-info"></i>
-                      </span>
+          <section className="form-body custom-flex rounded-3">
+            <div className="card">
+              <form className="p-4">
+                {/* short answer */}
+                <div className="mb-3">
+                  <label htmlFor="exampleInputPassword1" className="form-label">
+                    1. Provide short answer here.
+                    <span
+                      data-toggle="tooltip"
+                      data-placement="left"
+                      title="Short Answers"
+                    >
+                      <i className="fa-solid fa-circle-info"></i>
+                    </span>
+                  </label>
+                  <input
+                    type="password"
+                    className="form-control"
+                    id="exampleInputPassword1"
+                  ></input>
+                </div>
+                <hr />
+                {/* multiple choice */}
+                <div className="container my-1">
+                  <div className="question pt-2">
+                    <div>
+                      <p>
+                        2. Multiple choice question here.
+                        <span
+                          data-toggle="tooltip"
+                          data-placement="left"
+                          title="Multiple Choice"
+                        >
+                          <i className="fa-solid fa-circle-info"></i>
+                        </span>
+                      </p>
+                    </div>
+                    <div className="pt-3" id="options">
+                      <label className="options">
+                        Okay
+                        <input type="radio" name="radio"></input>
+                        <span className="checkmark"></span>
+                      </label>
+                      <label className="options">
+                        Yes
+                        <input type="radio" name="radio"></input>
+                        <span className="checkmark"></span>
+                      </label>
+                      <label className="options">
+                        Works!
+                        <input type="radio" name="radio"></input>
+                        <span className="checkmark"></span>
+                      </label>
+                      <label className="options">
+                        Not cool
+                        <input type="radio" name="radio"></input>
+                        <span className="checkmark"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+                {/* check box */}
+                <div className="my-3 form-check">
+                  <input
+                    type="checkbox"
+                    className="form-check-input"
+                    id="exampleCheck1"
+                  ></input>
+                  <label className="form-check-label" htmlFor="exampleCheck1">
+                    3. Check this
+                    <span
+                      data-toggle="tooltip"
+                      data-placement="left"
+                      title="Check Please"
+                    >
+                      <i className="fa-solid fa-circle-info"></i>
+                    </span>
+                  </label>
+                </div>
+                {/* Drag and Drop */}
+                <div>
+                  <div id="buttons">
+                    <p draggable="true" id="1">
+                      Drag
+                    </p>
+                    <p draggable="true" id="2">
+                      And
+                    </p>
+                    <p draggable="true" id="3">
+                      Drop
                     </p>
                   </div>
-                  <div className="pt-3" id="options">
-                    <label className="options">
-                      Okay
-                      <input type="radio" name="radio"></input>
-                      <span className="checkmark"></span>
-                    </label>
-                    <label className="options">
-                      Yes
-                      <input type="radio" name="radio"></input>
-                      <span className="checkmark"></span>
-                    </label>
-                    <label className="options">
-                      Works!
-                      <input type="radio" name="radio"></input>
-                      <span className="checkmark"></span>
-                    </label>
-                    <label className="options">
-                      Not cool
-                      <input type="radio" name="radio"></input>
-                      <span className="checkmark"></span>
-                    </label>
-                  </div>
+                  <input id="dragInput" name="dragInput" type="text" />
                 </div>
-              </div>
-              <hr />
-              {/* check box */}
-              <div className="my-3 form-check">
-                <input
-                  type="checkbox"
-                  className="form-check-input"
-                  id="exampleCheck1"
-                ></input>
-                <label className="form-check-label" htmlFor="exampleCheck1">
-                  3. Check this
-                  <span
-                    data-toggle="tooltip"
-                    data-placement="left"
-                    title="Check Please"
-                  >
-                    <i className="fa-solid fa-circle-info"></i>
-                  </span>
-                </label>
-              </div>
-              {/* Drag and Drop */}
-              <div>
-                <div id="buttons">
-                  <p draggable="true" id="1">
-                    Drag
-                  </p>
-                  <p draggable="true" id="2">
-                    And
-                  </p>
-                  <p draggable="true" id="3">
-                    Drop
-                  </p>
-                </div>
-                <input id="dragInput" name="dragInput" type="text" />
-              </div>
-            </form>
-          </div>
-        </section>
+              </form>
+            </div>
+          </section>
+        </div>
         {/* another section */}
         <section className="section form-body custom-flex rounded-3">
           <form className="p-4">

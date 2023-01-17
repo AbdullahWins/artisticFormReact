@@ -3,6 +3,12 @@
   background-image: url("./assets/background.jpeg");
   background-size: cover;
 }
+
+.inner-body {
+  display: flex;
+  width: 800px;
+  height: 800px;
+}
 .custom-flex {
   display: flex;
   align-items: center;
@@ -86,10 +92,8 @@
 
 /* form here */
 .form-body {
-  background-color: white;
   color: black;
-  height: 700px;
-  width: 600px;
+  width: 500px;
 }
 
 /* every icon with their animation */
@@ -228,8 +232,15 @@
 
 /* media query for small screen */
 @media only screen and (max-width: 600px) {
+  .body {
+  }
   .form-body {
-    width: 350px;
+    width: 300px;
+    height: 600px;
+  }
+  .inner-body {
+    display: flex;
+    width: 450px;
     height: 600px;
   }
   .card {
@@ -260,7 +271,7 @@
   #img3 {
     top: 10px;
     width: 70px;
-    right: 35px;
+    right: 5px;
   }
 
   @keyframes img3 {
@@ -281,7 +292,7 @@
   }
   #img5 {
     bottom: 50px;
-    left: 30px;
+    left: 5px;
     width: 70px;
   }
   #img6 {
@@ -306,8 +317,16 @@
 /* media query for mid size screen */
 @media (min-width: 601px) and (max-width: 1000px) {
   .form-body {
-    width: 500px;
+    width: 300px;
     height: 600px;
+  }
+  .inner-body {
+    display: flex;
+    width: 500px;
+    height: 700px;
+  }
+  .card {
+    width: 75%;
   }
   #img1 {
     width: 90px;
@@ -331,6 +350,7 @@
   }
   #img3 {
     top: 10px;
+    right: 5px;
     width: 90px;
   }
 
