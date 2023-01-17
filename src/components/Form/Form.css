@@ -3,7 +3,6 @@
   background-image: url("./assets/background.jpeg");
   background-size: cover;
 }
-
 .inner-body {
   display: flex;
   width: 800px;
@@ -238,29 +237,27 @@
 
 /* media query for small screen */
 @media only screen and (max-width: 600px) {
-  .body {
-  }
   .form-body {
-    width: 300px;
+    width: 250px;
     height: 600px;
   }
   .inner-body {
     display: flex;
-    width: 450px;
+    width: 350px;
     height: 600px;
   }
   .card {
-    width: 75%;
+    width: 85%;
   }
   #img1 {
     top: 250px;
     width: 70px;
-    right: 0px;
+    right: -20px;
   }
   #img2 {
     top: 250px;
     width: 70px;
-    right: 5px;
+    right: -15px;
   }
 
   @keyframes img2 {
@@ -275,9 +272,9 @@
     }
   }
   #img3 {
-    top: 10px;
+    top: 500px;
     width: 70px;
-    right: 5px;
+    right: -15px;
   }
 
   @keyframes img3 {
@@ -293,17 +290,39 @@
   }
   #img4 {
     bottom: 50px;
-    left: 10px;
-    width: 70px;
+    left: -20px;
+    width: 75px;
+  }
+  @keyframes img4 {
+    0% {
+      bottom: 300px;
+    }
+    50% {
+      bottom: 310px;
+    }
+    100% {
+      bottom: 300px;
+    }
   }
   #img5 {
-    bottom: 50px;
-    left: 5px;
+    bottom: 500px;
+    left: -20px;
     width: 70px;
+  }
+  @keyframes img5 {
+    0% {
+      bottom: 510px;
+    }
+    50% {
+      bottom: 500px;
+    }
+    100% {
+      bottom: 510px;
+    }
   }
   #img6 {
     bottom: 0px;
-    left: 10px;
+    left: -20px;
     width: 70px;
   }
 
@@ -378,6 +397,18 @@
   #img5 {
     width: 90px;
     left: 10px;
+    bottom: 500px;
+  }
+  @keyframes img5 {
+    0% {
+      bottom: 500px;
+    }
+    50% {
+      bottom: 510px;
+    }
+    100% {
+      bottom: 500px;
+    }
   }
   #img6 {
     bottom: 50px;
