@@ -2,6 +2,11 @@ import React from "react";
 import "./DragAndDrop.css";
 
 const DragAndDrop = () => {
+  //javascript for drag n drop
+  document.addEventListener("dragstart", function (event) {
+    document.getElementById("dragInput").focus();
+    event.dataTransfer.setData("Text", `${event.target.innerHTML} `);
+  });
   return (
     <div>
       <div className="custom-flex" id="buttons">

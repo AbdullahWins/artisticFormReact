@@ -1,0 +1,303 @@
+/* every icon with their animation */
+#img1 {
+  position: absolute;
+  top: 50px;
+  right: 5px;
+  z-index: 999;
+  width: 150px;
+  animation-name: img1;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes img1 {
+  0% {
+    top: 50px;
+  }
+  50% {
+    top: 60px;
+  }
+  100% {
+    top: 50px;
+  }
+}
+#img2 {
+  position: absolute;
+  top: 300px;
+  right: 00px;
+  z-index: 999;
+  width: 100px;
+  animation-name: img2;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes img2 {
+  0% {
+    top: 300px;
+  }
+  50% {
+    top: 310px;
+  }
+  100% {
+    top: 300px;
+  }
+}
+#img3 {
+  position: absolute;
+  top: 600px;
+  right: 0px;
+  z-index: 999;
+  width: 150px;
+  animation-name: img3;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes img3 {
+  0% {
+    top: 600px;
+  }
+  50% {
+    top: 590px;
+  }
+  100% {
+    top: 600px;
+  }
+}
+#img4 {
+  position: absolute;
+  bottom: 300px;
+  left: 10px;
+  z-index: 999;
+  width: 150px;
+  animation-name: img4;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes img4 {
+  0% {
+    bottom: 300px;
+  }
+  50% {
+    bottom: 310px;
+  }
+  100% {
+    bottom: 300px;
+  }
+}
+#img5 {
+  position: absolute;
+  bottom: 600px;
+  left: 10px;
+  z-index: 999;
+  width: 150px;
+  animation-name: img5;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes img5 {
+  0% {
+    bottom: 600px;
+  }
+  50% {
+    bottom: 590px;
+  }
+  100% {
+    bottom: 600px;
+  }
+}
+#img6 {
+  position: absolute;
+  bottom: 100px;
+  left: 0px;
+  z-index: 999;
+  width: 120px;
+  animation-name: img6;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes img6 {
+  0% {
+    bottom: 100px;
+  }
+  50% {
+    bottom: 110px;
+  }
+  100% {
+    bottom: 100px;
+  }
+}
+
+/* media query for small screen */
+@media only screen and (max-width: 600px) {
+  #img1 {
+    top: 250px;
+    width: 70px;
+    right: -20px;
+  }
+  #img2 {
+    top: 250px;
+    width: 70px;
+    right: -15px;
+  }
+
+  @keyframes img2 {
+    0% {
+      top: 250px;
+    }
+    50% {
+      top: 240px;
+    }
+    100% {
+      top: 250px;
+    }
+  }
+  #img3 {
+    top: 500px;
+    width: 70px;
+    right: -15px;
+  }
+
+  @keyframes img3 {
+    0% {
+      top: 500px;
+    }
+    50% {
+      top: 510px;
+    }
+    100% {
+      top: 500px;
+    }
+  }
+  #img4 {
+    bottom: 50px;
+    left: -20px;
+    width: 75px;
+  }
+  @keyframes img4 {
+    0% {
+      bottom: 300px;
+    }
+    50% {
+      bottom: 310px;
+    }
+    100% {
+      bottom: 300px;
+    }
+  }
+  #img5 {
+    bottom: 500px;
+    left: -20px;
+    width: 70px;
+  }
+  @keyframes img5 {
+    0% {
+      bottom: 510px;
+    }
+    50% {
+      bottom: 500px;
+    }
+    100% {
+      bottom: 510px;
+    }
+  }
+  #img6 {
+    bottom: 0px;
+    left: -20px;
+    width: 70px;
+  }
+
+  @keyframes img6 {
+    0% {
+      bottom: 10px;
+    }
+    50% {
+      bottom: 15px;
+    }
+    100% {
+      bottom: 10px;
+    }
+  }
+}
+
+/* media query for mid size screen */
+@media (min-width: 601px) and (max-width: 1000px) {
+  #img1 {
+    width: 90px;
+  }
+  #img2 {
+    top: 250px;
+    width: 77px;
+    right: 5px;
+  }
+
+  @keyframes img2 {
+    0% {
+      top: 250px;
+    }
+    50% {
+      top: 240px;
+    }
+    100% {
+      top: 250px;
+    }
+  }
+  #img3 {
+    top: 10px;
+    right: 0px;
+    width: 90px;
+  }
+
+  @keyframes img3 {
+    0% {
+      top: 500px;
+    }
+    50% {
+      top: 510px;
+    }
+    100% {
+      top: 500px;
+    }
+  }
+  #img4 {
+    width: 110px;
+    left: 0px;
+  }
+  #img5 {
+    width: 90px;
+    left: 10px;
+    bottom: 500px;
+  }
+  @keyframes img5 {
+    0% {
+      bottom: 500px;
+    }
+    50% {
+      bottom: 510px;
+    }
+    100% {
+      bottom: 500px;
+    }
+  }
+  #img6 {
+    bottom: 50px;
+    left: 30px;
+    width: 70px;
+  }
+
+  @keyframes img6 {
+    0% {
+      bottom: 50px;
+    }
+    50% {
+      bottom: 60px;
+    }
+    100% {
+      bottom: 50px;
+    }
+  }
+}
