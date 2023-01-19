@@ -32,6 +32,9 @@
   border: 1px solid grey;
   border-radius: 4px;
 }
+.card {
+  width: 95%;
+}
 
 /* media query for small screen */
 @media only screen and (max-width: 600px) {
@@ -48,7 +51,7 @@
   }
   /* this is the actual card inside form-body which contains all the input fields inside it */
   .card {
-    width: 85%;
+    width: 95%;
   }
 }
 
@@ -67,6 +70,6 @@
   }
   /* this is the actual card inside form-body which contains all the input fields inside it */
   .card {
-    width: 75%;
+    width: 95%;
   }
 }
