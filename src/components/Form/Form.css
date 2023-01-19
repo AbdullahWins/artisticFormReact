@@ -1,4 +1,4 @@
-/* body and icons box */
+/* this is the full webpage */
 .body {
   display: flex;
   background-image: url("../../assets/background.jpeg");
@@ -6,14 +6,21 @@
   gap: 50px;
   padding: 50px 0px;
 }
+/* this is a invisible box around form-body (whole white section) which holds the icons in place. */
 .inner-body {
   display: flex;
   width: 800px;
   height: 800px;
   position: relative;
 }
+/* this is the whole white section of the page, it holds a card inside it */
+.form-body {
+  color: black;
+  width: 500px;
+  border-radius: 7px;
+}
 
-/* custom css class */
+/* custom css classes to minimize the code in form.js and moved them here */
 .custom-flex {
   display: flex;
   align-items: center;
@@ -26,26 +33,20 @@
   border-radius: 4px;
 }
 
-/* form here */
-.form-body {
-  color: black;
-  width: 500px;
-  border-radius: 7px;
-}
-
-
-
 /* media query for small screen */
 @media only screen and (max-width: 600px) {
-  .form-body {
-    width: 250px;
-    height: 600px;
-  }
+  /* this is a invisible box around form-body (whole white section) which holds the icons in place. */
   .inner-body {
     display: flex;
     width: 350px;
     height: 600px;
   }
+  /* this is the whole white section of the page, it holds a card inside it */
+  .form-body {
+    width: 250px;
+    height: 600px;
+  }
+  /* this is the actual card inside form-body which contains all the input fields inside it */
   .card {
     width: 85%;
   }
@@ -53,15 +54,18 @@
 
 /* media query for mid size screen */
 @media (min-width: 601px) and (max-width: 1000px) {
-  .form-body {
-    width: 350px;
-    height: 600px;
-  }
+  /* this is a invisible box around form-body (whole white section) which holds the icons in place. */
   .inner-body {
     display: flex;
     width: 550px;
     height: 600px;
   }
+  /* this is the whole white section of the page, it holds a card inside it */
+  .form-body {
+    width: 350px;
+    height: 600px;
+  }
+  /* this is the actual card inside form-body which contains all the input fields inside it */
   .card {
     width: 75%;
   }
