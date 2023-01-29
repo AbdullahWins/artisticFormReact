@@ -1,5 +1,1 @@
-Sorry I couldnot provide my discord as the chat is moniored.
-
-This is my discord: AbdullahWins#4201
-
-sorry for the inconvinience.
+This is the exact same form but with modular components.
